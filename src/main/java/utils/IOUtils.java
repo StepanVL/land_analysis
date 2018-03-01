@@ -28,7 +28,7 @@ public class IOUtils {
             return parseInput(scanner.nextLine());
 
         }else{
-            return parseInput(LandEvaluator.args[0]);
+            return parseInput(LandEvaluator.INPUT_DATA);
         }
 
     }
@@ -42,7 +42,7 @@ public class IOUtils {
 
     public static List<int[]> parseInput(String rawData, boolean isTest){
 
-        List<int[]> list = new ArrayList<int[]>();
+        List<int[]> list = new ArrayList<>();
         Pattern p = Pattern.compile("-?\\d+");
         String[] rectangles = rawData.split(",");
         for (String rawRectangleCoordinates: rectangles){

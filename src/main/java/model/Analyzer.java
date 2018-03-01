@@ -15,7 +15,7 @@ public class Analyzer {
     public Analyzer(){  }
 
     //initialize space to store land data. 0: processed land, 1: processed unit area in active set; 2:  on 3 - default/unprocessed
-    public List<Integer> analyze(){
+    public List<Integer> computeAreas(){
         initializeRectangles();
         while(field.findCellContainingValue(0) > -1){
             processPatch();

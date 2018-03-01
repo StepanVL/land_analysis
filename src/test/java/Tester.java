@@ -69,7 +69,7 @@ public class Tester {
 
         AnalyzerLite a = new AnalyzerLite();
         int[] expectedResult = {22816, 192608};
-        List<Integer> results = a.computeAreas(LandEvaluator.INPUT);
+        List<Integer> results = a.computeAreas(LandEvaluator.INPUT_DATA);
 
         assertEquals(expectedResult.length, results.size());
         for (int i = 0; i <results.size() ; i++) {
